@@ -5,8 +5,10 @@ plugins {
 
 android {
     namespace = "com.example.bmicalculator"
-    compileSdk {
-        version = release(36)
+    compileSdk = 36
+
+    buildFeatures {
+        viewBinding = true
     }
 
     defaultConfig {
