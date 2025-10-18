@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".ActivityCreateAccount">
 
     <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
@@ -24,6 +24,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/back"
             android:src="@drawable/outline_arrow_back_24"
             app:tint="@color/black"/>
     </androidx.appcompat.widget.Toolbar>
@@ -90,6 +91,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/etName"
             android:drawablePadding="7.dp"
             android:drawableTint="@color/black"
             android:hint="@string/name"
@@ -112,6 +114,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/etEmail"
             android:hint="@string/email"
             android:textSize="18.sp"
             android:textColor="@color/black"
@@ -137,6 +140,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/etPassword"
             android:textSize="18.sp"
             android:textColor="@color/black"
             android:inputType="textPassword"
@@ -161,6 +165,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/etConfirmPassword"
             android:textSize="18.sp"
             android:textColor="@color/black"
             android:inputType="textPassword"

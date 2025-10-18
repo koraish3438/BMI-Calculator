@@ -14,4 +14,9 @@
     <string name="already_have_an_account">Already have an account?</string>
     <string name="login">Login</string>
     <string name="confirm_password">Confirm password</string>
+    <string name="back">Back</string>
+    <string name="we_missed_your_login_to_continue_your_journey_with_us">We missed your login to continue your journey with us</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or_login_with">Or login with</string>
+    <string name="doesn_t_have_an_account">Doesn\'t have an account?</string>
 </resources>
