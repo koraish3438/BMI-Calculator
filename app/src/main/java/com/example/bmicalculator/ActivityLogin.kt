@@ -3,6 +3,7 @@ package com.example.bmicalculator
 import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.bmicalculator.databinding.ActivityLoginBinding
@@ -20,6 +21,8 @@ class ActivityLogin : AppCompatActivity() {
         }
         
         binding.btnLoginNow.setOnClickListener {
+            hideKeyboard()
+
             val email = binding.etLoginEmail.text.toString().trim()
             val password = binding.etLoginPassword.text.toString().trim()
 
@@ -48,6 +51,13 @@ class ActivityLogin : AppCompatActivity() {
         binding.goToRegister.setOnClickListener {
             val intent = Intent(this, ActivityCreateAccount::class.java)
             startActivity(intent)
+        }
+    }
+    private fun hideKeyboard() {
+        val view = this.currentFocus
+        if (view != null) {
+            val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(view.windowToken, 0)
         }
     }
 }
